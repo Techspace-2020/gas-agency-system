@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://applylpgdealership.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="image/gas-cylinder.png">
+        <strong>Gas Seva</strong>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="admin_login.html">Admin</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="panel auth-panel centered-auth-panel">
+                    <h3>Admin Access</h3>
+                    <p class="subtitle">Secure dashboard access for administrator</p>
+                        <div class="auth-tabs" role="tablist" aria-label="Authentication tabs">
+                            <button type="button" class="tab active" data-target="login">Login</button>
+                            <button type="button" class="tab" data-target="signup">Signup</button>
+                        </div>
+
+                        <!-- Login form (existing) -->
+                        <form id="admin-login-form" method="post" action="admin_dashboard.html" onsubmit="return foo()" role="tabpanel" aria-hidden="false">
+                        <input type="hidden" name="_token" value="rHmef2V5LY5dJsfw46OW852FQ97d9QfbvOu4CCAY">							
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="input-group">
+                                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" name="email" class="box input-field" placeholder="Email Address" required autocomplete="email">
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="input-group">
+                                    <span class="input-icon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" name="password" class="form-control input-field" placeholder="Password" required autocomplete="current-password">
+                                </label>
+                            </div>
+                            <div class="col-6 col-sm-6">
+                                <button type="submit"  class="btn btn-primary mt-20" onclick="admin_login(this.form);">Login</button>
+                            </div>                    
+                            <div class="col-6 col-sm-6 text-right">
+                                <a href="#" style="margin-top:10px;display:block;">Forgot Password</a>
+                            </div>					
+                        </div>
+                        </form>
+
+                        <!-- Signup form (hidden by default) -->
+                        <form id="admin-signup-form" style="display:none;" onsubmit="return false;" role="tabpanel" aria-hidden="true">
+                            <input type="hidden" name="_token" value="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="input-group">
+                                        <span class="input-icon">📧</span>
+                                        <input type="email" name="email" class="box input-field" placeholder="Email Address" required autocomplete="email">
+                                    </label>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="input-group">
+                                        <span class="input-icon">🔒</span>
+                                        <input type="password" name="password" class="form-control input-field" placeholder="Password" required autocomplete="new-password">
+                                    </label>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="input-group">
+                                        <span class="input-icon">🔒</span>
+                                        <input type="password" name="confirm_password" class="form-control input-field" placeholder="Confirm Password" required autocomplete="new-password">
+                                    </label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <button type="button" class="btn btn-primary mt-20" onclick="handleAdminSignup(this.form);">Signup</button>
+                                </div>
+                                <div class="col-6 col-sm-6 text-right">
+                                    <a href="#" style="margin-top:10px;display:block;">Forgot Password</a>
+                                </div>
+                            </div>
+                        </form>
+
+                </div>			
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- js file link  -->
+<script src="js/script.js"></script>
+

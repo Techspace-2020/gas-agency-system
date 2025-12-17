@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://applylpgdealership.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="image/gas-cylinder.png">
+        <strong>Gas Seva</strong>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home
+        <a href="login.html">User Login</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="panel auth-panel centered-auth-panel">
+                    <p style="color:#000;">Don't have an account? <a href="register.html">Register Now</a></p>
+                    <h3>Employee Access</h3>
+                    <p class="subtitle">Secure Dashboard Access For Employee's</p>
+
+                        <div class="auth-tabs" role="tablist" aria-label="Authentication tabs">
+                            <button type="button" class="tab active" data-target="login">Login</button>
+                            <button type="button" class="tab" data-target="signup">Signup</button>
+                        </div>
+
+                        <form id="user-login-form" method="post" action="login_dashboard.html" onsubmit="return foo()">
+                        <input type="hidden" name="_token" value="rHmef2V5LY5dJsfw46OW852FQ97d9QfbvOu4CCAY">							
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="input-group">
+                                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" name="email" class="form-control input-field" placeholder="Email Address" required autocomplete="email">
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="input-group">
+                                    <span class="input-icon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" name="password" class="form-control input-field" placeholder="Password" required autocomplete="current-password">
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="captcha-row" style="margin-bottom:10px;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;">
+                                    <canvas class="captcha-canvas" width="160" height="48" aria-hidden="true"></canvas>
+                                    <button type="button" class="btn btn-success btn-refresh" aria-label="Refresh captcha"><i class="fa fa-refresh"></i></button>
+                                    <input id="captcha" type="text" class="form-control captcha-input" name="captcha" placeholder="Enter Captcha" required autocomplete="off" style="flex:0 0 160px;">
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6">
+                                <button type="submit" class="btn btn-primary mt-20" onclick="login(this.form);">Login</button>
+                            </div>                    
+                            <div class="col-6 col-sm-6 text-right">
+                                <a href="#" style="margin-top:10px;display:block;">Forgot Password</a>
+                            </div>					
+                        </div>
+                        </form>
+
+                        <!-- Signup form (hidden) -->
+                        <form id="user-signup-form" style="display:none;" onsubmit="return false;">
+                            <input type="hidden" name="_token" value="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="input-group">
+                                        <span class="input-icon">📧</span>
+                                        <input type="email" name="email" class="form-control input-field" placeholder="Email Address" required autocomplete="email">
+                                    </label>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="input-group">
+                                        <span class="input-icon">🔒</span>
+                                        <input type="password" name="password" class="form-control input-field" placeholder="Password" required autocomplete="new-password">
+                                    </label>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="input-group">
+                                        <span class="input-icon">🔒</span>
+                                        <input type="password" name="confirm_password" class="form-control input-field" placeholder="Confirm Password" required autocomplete="new-password">
+                                    </label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <button type="button" class="btn btn-primary mt-20" data-signup>Signup</button>
+                                </div>
+                                <div class="col-6 col-sm-6 text-right">
+                                    <a href="#" style="margin-top:10px;display:block;">Forgot Password</a>
+                                </div>
+                            </div>
+                        </form>
+
+                </div>            
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- js file link  -->
+<script src="js/script.js"></script>
+

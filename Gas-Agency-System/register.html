@@ -1,0 +1,524 @@
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="https://applylpgdealership.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="image/gas-cylinder.png">
+        <strong>Gas</strong> Seva 
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="login.html">User Login</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">				
+            <div class="col-md-12">
+                <form method="post" action="/">					
+                    <div class="form-panel">
+                        <div class="heading"><i class="fa fa-bars"></i> Application Form</div>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Title</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="m-0">Applicant Registration Panel for LPG Gas Agency </p>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Location Description</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" name="nameofLocation" class="form-control rg" placeholder="name of Location">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Type of RO</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="m-0">Regular</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Category</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="m-0">Open</p>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>State</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" name="nameofstate" class="form-control rg" placeholder="State">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Published Date</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="date" name="dateofpublished" class="form-control gprv" required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Closing Date</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="date" name="dateofclosing" class="form-control gprv" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Apply As</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="radio" class="applyas" name="applyas" value="Individual"> Individual&nbsp;&nbsp;&nbsp;<input type="radio" class="applyas" name="applyas" value="Partnership"> Partnership
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p class="m-0"><b>Retail Outlet Eligibility Criteria for Land</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="m-0">15 X 15 Sq.M. (Mininum Size)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>				
+                    <div class="form-panel m-0">
+                        <div class="heading"><i class="fa fa-user"></i> Personal Information</div>
+                        <div class="box">
+                            <div class="firmname" style="display:none;">
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Firm name *</b></p>
+                                </div>
+                                <div class="col-6 col-md-10">
+                                    <input type="text" name="firmName" class="form-control rg" placeholder="Firm Name">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Type of RO *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" name="typeOfRo" class="form-control" value="Regular" readonly required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Name of Company *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <select name="nameofCompany" class="form-control" required>
+                                        <option value="">Select Company</option>
+                                                                                    <option value="Any of above">Any of above</option>
+                                                                                    <option value="Bharat Gas (BPCL)">Bharat Gas (BPCL)</option>
+                                                                                    <option value="Hindustan Gas (HPCL)">Hindustan Gas (HPCL)</option>
+                                                                                    <option value="Indane Gas (IOCL)">Indane Gas (IOCL)</option>
+                                                                                </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>First Name *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" id="fname" name="firstName" class="form-control" placeholder="First Name"  required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Last Name *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" id="lname" name="LastName" class="form-control" placeholder="Last Name"  required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Category Name *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" name="categoryName" class="form-control" value="Open" readonly required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Gender *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <select name="gender" class="form-control" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Mobile Number *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="number" onkeydown="javascript: return event.keyCode == 69 ? false : true" pattern="[6789][0-9]{9}" onKeyPress="if(this.value.length==10) return false;" name="mobileNumber" class="form-control" required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Landline Number </b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="number" onkeydown="javascript: return event.keyCode == 69 ? false : true" name="landlineNumber" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Res. Address *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" name="resAddress" class="form-control" required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Pincode </b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="number" onkeydown="javascript: return event.keyCode == 69 ? false : true" pattern="[0-9]{5}" onKeyPress="if(this.value.length==6) return false;" name="pincode" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>State *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <select id="state" name="state" class="form-control" required>
+                                        <option value="">Select</option>
+                                                                                    <option value="31">Andaman &amp; Nicobar</option>
+                                                                                    <option value="1">Andhra Pradesh</option>
+                                                                                    <option value="2">Arunachal Pradesh</option>
+                                                                                    <option value="3">Assam</option>
+                                                                                    <option value="4">Bihar</option>
+                                                                                    <option value="5">Chandigarh</option>
+                                                                                    <option value="6">Chhattisgarh</option>
+                                                                                    <option value="32">Dadra &amp; Nagar Haveli</option>
+                                                                                    <option value="33">Daman &amp; Diu</option>
+                                                                                    <option value="7">Delhi</option>
+                                                                                    <option value="8">Goa</option>
+                                                                                    <option value="10">Gujarat</option>
+                                                                                    <option value="9">Haryana</option>
+                                                                                    <option value="11">Himachal Pradesh</option>
+                                                                                    <option value="34">Jammu &amp; Kashmir</option>
+                                                                                    <option value="12">Jharkhand</option>
+                                                                                    <option value="13">Karnataka</option>
+                                                                                    <option value="14">Kerala</option>
+                                                                                    <option value="36">Ladakh</option>
+                                                                                    <option value="15">Madhya Pradesh</option>
+                                                                                    <option value="16">Maharashtra</option>
+                                                                                    <option value="17">Manipur</option>
+                                                                                    <option value="18">Meghalaya</option>
+                                                                                    <option value="19">Mizoram</option>
+                                                                                    <option value="20">Nagaland</option>
+                                                                                    <option value="21">Odisha</option>
+                                                                                    <option value="35">Pondicherry</option>
+                                                                                    <option value="22">Punjab</option>
+                                                                                    <option value="23">Rajasthan</option>
+                                                                                    <option value="24">Sikkim</option>
+                                                                                    <option value="25">Tamil Nadu</option>
+                                                                                    <option value="26">Telangana</option>
+                                                                                    <option value="27">Tripura</option>
+                                                                                    <option value="28">Uttar Pradesh</option>
+                                                                                    <option value="29">Uttarakhand</option>
+                                                                                    <option value="30">West Bengal</option>
+                                                                                </select>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>District *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" name="district" class="form-control" required/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Email *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>PAN Number * </b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input etyle="text-transform: uppercase;" type="text" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" name="pannumber" maxlength="10" class="form-control" required>
+                                </div>
+                            </div>								
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <p><b>Whether Applicant is Indian Citizen *</b></p>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <input type="radio" name="indianCitizen" value="Yes" required> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="indianCitizen" value="No"> No
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p><b>Residential of Indian as IT Rule * </b></p>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <input type="radio" name="itRule" value="Yes" required> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="itRule" value="No"> No
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <p><b>Date of Birth *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="date" name="dob" class="form-control" required>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p><b>Physical Disability * </b></p>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <input type="radio" name="physicalDisability" value="Yes" required> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="physicalDisability" value="No"> No
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <p><b>Father/Husband Name *</b></p>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <input type="text" id="ffname" name="fatehrFName" placeholder="First Name" class="form-control" required>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <input type="text" name="fatehrMName" placeholder="Middle Name" class="form-control">
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <input type="text" name="fatehrLName" placeholder="Last Name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <p><b>Marital Status *</b>(In case of married women Husband's Name)</p>
+                                </div>
+                                <div class="col-6 col-md-9">
+                                    <input type="radio" class="mt" name="maritalStatus" value="Single" required> Single&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="mt" name="maritalStatus" value="Married"> Married&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="mt" name="maritalStatus" value="Widow (er"> Widow (er)&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="mt" name="maritalStatus" value="Divorce"> Divorce
+                                </div>
+                            </div>
+                            <div class="row mtrs" style="display:none;">
+                                <div class="col-6 col-md-3">
+                                    <p><b>Spouse Name *</b></p>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <input type="text" name="spouseFName" placeholder="Spouse First Name" class="form-control mtrg">
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <input type="text" name="spouseMName" placeholder="Spouse Middle Name" class="form-control">
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <input type="text" name="spouseLName" placeholder="Spouse Last Name" class="form-control mtrg">
+                                </div>
+                            </div>
+                        </div>							
+                    </div>				
+                    <div class="form-panel m-0">
+                        <div class="heading"><i class="fa fa-cap"></i> Applicant's Education Qualification (Minimum 10th pass or Equivalent)</div>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <p><b>Qualification *</b></p>
+                                    <input type="text" name="qualification" class="form-control" placeholder="Qualification" required>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p><b>Board/University/Institute *</b></p>
+                                    <input type="text" name="board" class="form-control" placeholder="Board/University/Institute" required>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Degree</b></p>
+                                    <input type="text" name="degree" class="form-control" placeholder="Degree">
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Year *</b></p>
+                                    <select id="ddlYears" name="year" class="form-control" required>
+                                        <option value="">Select Year</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Group Type *</b></p>
+                                    <select name="groupType" class="form-control gp" required>
+                                        <option value="">Select Type</option>
+                                        <option value="Group 1">Group 1</option>
+                                        <option value="Group 2">Group 2</option>
+                                        <option value="Group 3">Group 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row gphide">
+                                <div class="col-6 col-md-3">
+                                    <p style="height:40px;"><b>Name(s) of the owner of Land/Leaseholder *</b></p>
+                                    <input type="text" name="leaseholder" class="form-control gprv" required>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <p style="height:40px;"><b>Relationship with Application *</b></p>
+                                    <select name="relationshipwithapplication" class="form-control gprv" required>
+                                        <option value="">Relationship with Application</option>
+                                        <option value="Self">Self</option>
+                                        <option value="Spouse">Spouse</option>
+                                        <option value="Father">Father</option>
+                                        <option value="Mother">Mother</option>
+                                        <option value="Step Father">Step Father</option>
+                                        <option value="Step Mother">Step Mother</option>
+                                        <option value="Brother/Sister">Brother/Sister</option>
+                                        <option value="Step Brother/Sister">Step Brother/Sister</option>
+                                        <option value="Son/Daughter/Step, Son/Step Daughter">Son/Daughter/Step, Son/Step Daughter</option>
+                                        <option value="Son-in-law / Daughter-in-law">Son-in-law / Daughter-in-law</option>
+                                        <option value="Parents-in-law">Parents-in-law</option>
+                                        <option value="Grand Parents (Both Maternal & Paternal)">Grand Parents (Both Maternal & Paternal)</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <p style="height:40px;"><b>Date of registration sale deed / Gift deed / lease deed / date of mutation *</b></p>
+                                    <input type="date" name="dateofregistrationsaledeed" class="form-control gprv" required>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <p style="height:40px;"><b>Khasra No / Khatouni / Gut No / Survey No. *</b></p>
+                                    <input type="text" name="khasrano" class="form-control gprv" required>
+                                </div>								
+                                <div class="col-6 col-md-12">
+                                    <p><b>Location of the Land *</b></p>
+                                    <input type="text" name="locationoftheland" class="form-control gprv" placeholder="Fill the complete address of the land" required>
+                                </div>								
+                            </div>
+                            <div class="row gphide">
+                                <div class="col-6 col-md-12">
+                                    <p><b>Dimension of Land *</b></p>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <p><b>Frontage in Meter *</b></p>
+                                    <input type="text" name="frontage" class="form-control gprv" required>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <p><b>Depth in Meter *</b></p>
+                                    <input type="text" name="depth" class="form-control gprv" required>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <p><b>Area (Sq.M) *</b></p>
+                                    <input type="text" name="area" class="form-control gprv" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-md-7">
+                                    <p><b>are you efilling to transfer the land on sale / long lease of the LPG Gas Agency Dealers *<br>Select YES or NO incase of dealership, will you sale or lease desired property to the company?</b></p>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <select name="dealershipchayan" class="form-control" required="">
+                                        <option value="">Select Type</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>	
+                            </div>
+                            <div class="row">							
+                                <div class="col-6 col-md-4">
+                                    <p><b>Please specify rate(RS) term *</b></p>
+                                </div>								
+                                <div class="col-6 col-md-5">
+                                    <textarea name="specifyrate" class="form-control" placeholder="Mentioned the expected lease or sale price of desired property if Yes" required></textarea>
+                                </div>								
+                            </div>
+                            <div class="row">							
+                                <div class="col-6 col-md-4">
+                                    <p><b>Do you want to offer another plot of land under? *</b></p>
+                                </div>								
+                                <div class="col-6 col-md-2">
+                                    <input type="radio" name="landunder" value="Yes" required=""> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="landunder" value="No"> No
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <p><b>Login Password *</b></p>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="password" name="password" placeholder="Create a Password" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>							
+                    </div>
+                    <div class="form-panel m-0">
+                        <div class="heading"><i class="fa fa-check"></i> Declaration</div>
+                        <p style="padding:15px;margin:0;text-align:justify;">
+                            I, <span id="namespan" style="font-weight:700;">....................</span> of/son of/wife of Shri <span id="fnamespan" style="font-weight:700;">....................</span> hereby confirm that I have been authorized to submit this application on behalf of M/s .................... and the information given above is true and correct. Any wrong information/misrepresentation/suppression of facts will make us ineligible for this Dealership. That if any information/declaration given by us in application or in any document submitted by us in support of application for award of the dealership shall be found to be untrue or incorrect or false, the Company would be within its rights to withdraw/terminate letter of intent of the dealership (if already appointed) and that we would have no claim, whatsoever, against the Corporation for such withdrawal/termination.
+                        </p>
+                        <center><input type="checkbox" required/> Accept *<br><br></center>
+                    </div>
+                    <div class="form-panel m-0">
+                        <div class="heading"><i class="fa fa-image"></i> Applicant Photo</div>
+                        <div class="box">
+                            <div class="row">							
+                                <div class="col-md-6">
+                                    <p><b>Applicant Photo *</b></p>
+                                    <input type="file" class="form-control" style="height:auto;" name="applicantphoto" required="">
+                                    <span style="font-size:11px;">Formate jpg only, Max Size 50kb, Dimension 5.5cm X 5.5cm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-panel m-0">
+                        <div class="heading"><i class="fa fa-file"></i> Applicant ID and Address Proof</div>
+                        <div class="box">
+                            <div class="row">							
+                                <div class="col-md-6">
+                                    <p><b>Applicant ID Proof *</b></p>
+                                    <input type="file" class="form-control" style="height:auto;" name="applicantid" required="">
+                                    <span style="font-size:11px;">Formate jpg only, Max Size 100kb, Dimension 5.5cm X 5.5cm</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><b>Applicant Address Proof *</b></p>
+                                    <input type="file" class="form-control" style="height:auto;" name="applicantaddress" required="">
+                                    <span style="font-size:11px;">Formate jpg only, Max Size 100kb, Dimension 5.5cm X 5.5cm</span>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <button type="submit" style="margin-top:15px;" class="btn btn-primary mt-20" onclick="submit();">Submit</button>
+                                </div>	
+                                <div class="col-6 col-sm-6 text-right">
+                                    <a href="login.html" style="margin-top:15px;" class="btn btn-primary mt-20">Back</a>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- js file link  -->
+<script src="js/script.js"></script>
