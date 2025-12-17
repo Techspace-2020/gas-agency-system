@@ -37,5 +37,5 @@ Smart Features of Smart Booking Modes And Free Services to customers.
 • View Request <br>
 
 ## Thank You
-- Author [Shivani Singh]
+- Rakesh
 
