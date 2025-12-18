@@ -34,11 +34,11 @@ function createMockUser(email, password, role = 'user') {
 	return true;
 }
 function seedDefaultUsers() {
-	const users = _getUsers();
-	if (users.length === 0) {
-		createMockUser('admin@gmail.com', 'admin', 'admin');
-		createMockUser('test', 'test', 'user'); // legacy "test" account
-	}
+	// Ensure required seed users exist (idempotent) so updates don't require clearing localStorage.
+	createMockUser('admin@gmail.com', 'admin', 'admin'); // admin account -> redirects to admin_dashboard.html
+	createMockUser('employee@gasseva.local', 'employee', 'user'); // employee account -> redirects to user_dashboard.html
+	// legacy account kept for compatibility (optional)
+	createMockUser('test', 'test', 'user');
 }
 function authenticate(identifier, password) {
 	const users = _getUsers();
@@ -299,7 +299,7 @@ function login(eventOrForm) {
 		setCurrentUser(user);
 		if (event) event.preventDefault(); // prevent default form submit; we handle navigation
 		if (user.role === 'admin') window.location.href = 'admin_dashboard.html';
-		else window.location.href = 'login_dashboard.html';
+		else window.location.href = 'user_dashboard.html';
 		return true;
 	} else {
 		if (event) event.preventDefault();
